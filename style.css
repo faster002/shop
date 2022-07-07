@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Akshar:wght@300;400;500;600;700&family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Anek+Latin:wght@100;200;300;400;500;600;700;800&family=Anek+Malayalam:wght@100;200;300;400;500;600;700;800&family=Artifika&family=Barlow+Condensed:ital,wght@0,800;0,900;1,400;1,800&family=Bebas+Neue&family=Cairo:wght@200;600&family=Chelsea+Market&family=Coiny&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Courgette&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Indie+Flower&family=Itim&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,900&family=Kdam+Thmor+Pro&family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Lobster&family=Macondo&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Pacifico&family=Patrick+Hand&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Red+Hat+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Righteous&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sansita+Swashed:wght@300;400;500;600;700;800;900&family=Secular+One&family=Shadows+Into+Light&family=Spline+Sans+Mono:wght@300;400;500;600;700&family=Staatliches&family=Trispace:wght@100;200;300;400;500;600;700;800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Varela+Round&family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: poppins;
+}
+.home-page{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background: url(background.png);
+}
+.home-page header{
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.home-page header .logo h2{
+font-size: 2.2em;
+margin-right: 1.2em;
+}
+.home-page header .logo h2 span{
+    color: white;
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+}
+.home-page header nav{
+    width: 25em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.home-page header nav a{
+    display: inline-block;
+    color: black;
+    font-size: 1.3em;
+    text-transform: capitalize;
+    font-weight: 500;
+    transition: 0.1s;
+}
+.home-page header nav a:hover{
+font-weight: bold;
+color: white;
+text-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+}
+.home-page .container{
+    width: 100%;
+    height: 90%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-page .container .info{
+    width: 60%;
+    padding: 2em 0;
+
+}
+.home-page .container .info .more{
+    padding: 2em 1em;
+}
+.home-page .container .info .more h1{
+    font-size: 4em;
+    text-transform: capitalize;
+}
+.home-page .container .info .more h1 span{
+    color: white;
+    text-shadow: 0 0 15px black;
+}
+.home-page .container .info .more p{
+    font-size: 1.2em;
+    font-weight: 600;
+
+}
+.home-page .container .info .more a{
+    width: fit-content;
+    display: block;
+    font-size: 1.2em;
+    color: black;
+    text-transform: capitalize;
+    font-weight: bold;
+    margin: 1em;
+    padding: 0.2em 0.5em;
+    background-color: white;
+    border-radius: 1em;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    transition: 0.2s;
+
+}
+.home-page .container .info .more a:hover{
+    color: white;
+    background-color: black;
+    transform: scale(1.2);
+}
+.home-page .container .info .cards{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+    flex-flow: row wrap;
+    gap: 2em;
+    padding: 2em 1em;
+}
+.home-page .container .info .cards .card{
+    width: 20em;
+    background-color: white;
+    padding: 1em 0.5em;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 5px 15px black;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.4s;
+}
+.home-page .container .info .cards .card:hover{
+    transform: translateY(10%);
+}
+.home-page .container .info .cards .card::after{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#e9e8fe;
+    z-index: -1;
+    transition: 0.4s;
+}
+.home-page .container .info .cards .card:hover:after{
+    top: 0%;
+}
+.home-page .container .info .cards .card h3{
+font-size: 1.5em;
+text-transform: capitalize;
+}
+.home-page .container .info .cards .card p{
+    text-align: left;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-top: 0.5em;
+}
+.home-page .container .info .cards .card img{
+    width: 4em;
+}
+
+
+.home-page .container  .img{
+    width: 40%;
+    position: relative;
+    overflow: hidden;
+
+}
+.home-page .container  .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.full-cours{
+    width: 100%;
+    min-height: 60vh;
+    position: relative;
+}
+.title{
+    padding: 1em;
+    font-size: 2.2em;
+    text-transform: capitalize;
+}
+ .cards{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+    padding:1.5em 0;
+    gap: 4em;
+}
+.full-cours .cards .card{
+    width: 22em;
+    height: 27em;
+    background-color: #e9e8fe;
+    border-radius: 0.7em;
+    box-shadow: -5px 5px 15px black;
+    overflow: hidden;
+    transition: 0.4s;
+}
+.full-cours .cards .card:hover{
+    transform: translateY(-10%);
+}
+.full-cours .cards .card .img{
+    width: 100%;
+    height: 65%;
+    position: relative;
+    overflow: hidden;
+}
+.full-cours .cards .card .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.full-cours .cards .card  .info{
+    width: 100%;
+    height: 35%;
+    padding: 1em;
+
+}
+.full-cours .cards .card  .info h3{
+    font-size: 1.7em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+.full-cours .cards .card  .info  p{
+    font-size: 1.3em;
+    font-weight: 600;
+    text-transform: capitalize;
+
+}
+.full-cours .cards .card  .info .more{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.full-cours .cards .card  .info .more p{
+    font-size: 1.3em;
+
+}
+.full-cours .cards .card  .info .more p span{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+
+.all-cours{
+    width: 100%;
+    min-height: 70vh;
+    position: relative;
+}
+.all-cours .cards{
+    width: 80%;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+    position: relative;
+    margin: auto;
+    gap: 2em;
+}
+.all-cours .cards .card{
+    width: 15em;
+    height: 15em;
+    background-color: #e9e8fe;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center ;
+    gap: 1em;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.4s;
+}
+.all-cours .cards .card:first-child{
+    background-color: white;
+}
+.all-cours .cards .card:hover{
+    background-color: white;
+}
+.all-cours .cards .card::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -60%;
+    width: 100%;
+    height: 30%;
+    background-color: white;
+    z-index: -1;
+    transform: rotate(135deg);
+    box-shadow: 0 0 15px black;
+    transition: 0.4s;
+
+}
+.all-cours .cards .card:first-child:before{
+    background-color: #e9e8fe;
+    left: -45%;
+}
+
+.all-cours .cards .card::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: -60%;
+    width: 100%;
+    height: 30%;
+    background-color: white;
+    z-index: -1;
+    transform: rotate(135deg);
+    box-shadow: 0 0 15px black;
+    transition: 0.4s;
+}
+.all-cours .cards .card:first-child:after{
+    background-color: #e9e8fe;
+    right: -45%;
+}
+
+.all-cours .cards .card:hover:before{
+left: -45%;
+background-color: #e9e8fe;
+}
+.all-cours .cards .card:hover:after{
+right: -45%;
+background-color: #e9e8fe;
+}
+
+
+
+
+
+.all-cours .cards .card img{
+    width: 5em;
+}
+.all-cours .cards .card h3{
+    font-size: 2em;
+    text-transform: capitalize;
+    letter-spacing: 0.15em;
+
+}
+
+.comment{
+    width: 100%;
+    min-height: 70vh;
+    position: relative;
+    background-color: black;
+}
+.comment .title h2{
+    color: #e9e8fe;
+}
+.comment .all-box{
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 2em;
+    padding: 2em 0;
+    
+    
+}
+.comment .all-box .box {
+    background-color: #e9e8fe;
+    padding: 2em 1em;
+    width: 60%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+.comment .all-box .box .img{
+    width: 15em;
+    height: 15em;
+    background-color: black;
+    overflow: hidden;
+    position: relative;
+    right: 10%;
+    transform: rotate(7deg);
+    z-index: 1;
+    padding: 1em;
+}
+.comment .all-box .box .img::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35%;
+    height: 100%;
+    background-color: #e9e8fe;
+    z-index: -1;
+}
+.comment .all-box .box .img img{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+.comment .all-box .box .info{
+    width: 70%;
+    height: auto;
+    padding: 2em 1em;
+}
+.comment .all-box .box .info h3{
+font-size: 1.8em;
+text-transform: uppercase;
+position: absolute;
+top: -5%;
+padding: 0.5em 1.2em;
+background-color: black;
+color: #e9e8fe;
+border-radius: 0.2em;
+}
+.comment .all-box .box .info p{
+    font-size: 1.4em;
+    font-weight: 600;
+    line-height: 1.6;
+    margin-bottom: 1em;
+
+}
+.comment .all-box .box .info a{
+    position: relative;
+    width: fit-content;
+    left: 60%;
+    background-color: black;
+    color: #e9e8fe;
+    padding: 0.2em 0.4em;
+    border-radius: 1em;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+
+.footer{
+    width: 100%;
+    min-height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer:hover{
+    background-color: #e9e8fe;
+}
+.footer .container{
+    width: 70%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+
+}
+.footer .container h2{
+    width: fit-content;
+    font-size: 2em;
+    text-transform: capitalize;
+    position: relative;
+}
+.footer .container h2::after{
+    content: '';
+    position: absolute;
+    bottom: -0.1em;
+    left: 0;
+    width: 100%;
+    height: 0.12em;
+    background-color: black;
+}
+.footer .container ul{
+    width: 100%;
+    display: flex;
+   flex-direction: column;
+   gap: 2em;
+   justify-content: center;
+   align-items: center;
+   margin-top: 1.5em;
+
+}
+.footer .container ul a{
+    display: block;
+    font-size: 1.3em;
+    color: black;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.footer .container ul a:hover{
+    transform: scale(1.2) translate(10% , -10%);
+}
